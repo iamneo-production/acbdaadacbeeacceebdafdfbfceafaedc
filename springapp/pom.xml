@@ -56,6 +56,12 @@
            <groupId>org.mockito</groupId>
            <artifactId>mockito-core</artifactId>
         </dependency>
+		<dependency>
+        <groupId>junit</groupId>
+        <artifactId>junit</artifactId>
+		<version>4.13</version>
+		<scope>test</scope>
+    </dependency>
 	</dependencies>
 
 	<build>
@@ -67,11 +73,5 @@
 		</plugins>
 	</build>
 
-	<dependency>
-        <groupId>junit</groupId>
-        <artifactId>junit</artifactId>
-		<version>4.1</version>
-		<scope>test</scope>
-    </dependency>
 
 </project>
