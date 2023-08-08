@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 import com.examly.springapp.model.Task;
@@ -27,8 +28,8 @@ public class TaskController {
         return tasksService.getTaskById(taskId);
     }
 
-    @DeleteMapping("/deleteTask/{taskId}")
-    public void deleteTask(@PathVariable("taskId")String taskId){
+    @DeleteMapping("/deleteTask")
+    public void deleteTask(@RequestParam("taskId")String taskId){
         tasksService.delete(taskId);
     }
 

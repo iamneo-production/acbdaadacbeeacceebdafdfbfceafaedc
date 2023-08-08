@@ -1,12 +1,12 @@
 -------------------------------------------------------------------------------
 Test set: com.examly.springapp.SpringApplicationTests
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 7.591 s <<< FAILURE! - in com.examly.springapp.SpringApplicationTests
-test_case2  Time elapsed: 0.257 s  <<< FAILURE!
+Tests run: 4, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 6.765 s <<< FAILURE! - in com.examly.springapp.SpringApplicationTests
+test_case2  Time elapsed: 0.201 s  <<< FAILURE!
 java.lang.AssertionError: No value at JSON path "$[*].houseNo"
 	at com.examly.springapp.SpringApplicationTests.test_case2(SpringApplicationTests.java:48)
 
-test_case4  Time elapsed: 0.057 s  <<< FAILURE!
-java.lang.AssertionError: Status expected:<200> but was:<404>
+test_case4  Time elapsed: 0.036 s  <<< FAILURE!
+java.lang.AssertionError: Status expected:<200> but was:<405>
 	at com.examly.springapp.SpringApplicationTests.test_case4(SpringApplicationTests.java:79)
 
