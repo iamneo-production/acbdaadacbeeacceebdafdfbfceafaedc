@@ -29,8 +29,8 @@ public class TaskController {
     }
 
     @DeleteMapping("/deleteTask")
-    public Task deleteTask(@RequestParam("taskId")String taskId){
-        return tasksService.delete(taskId);
+    public void deleteTask(@RequestParam("taskId")String taskId){
+         tasksService.delete(taskId);
     }
 
     @PostMapping("/saveTask")
