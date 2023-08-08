@@ -19,28 +19,28 @@ public class TaskController {
 
     @GetMapping("/alltasks")
     public List<Task> getAllTasks(){
-        return tasksService.getAllTasks();
+        return tasksservice.getAllTasks();
     }
 
     @GetMapping("/getTask/{taskId}")
     public Task getTask(@PathVariable("taskId") String taskId){
-        return tasksService.getTaskId(taskId);
+        return tasksservice.getTaskById(taskId);
     }
 
     @DeleteMapping("/deleteTask/{taskId}")
     public void deleteTask(@PathVariable("taskId")String taskId){
-        tasksService.delete(taskId);
+        tasksservice.delete(taskId);
     }
 
     @PostMapping("/saveTask")
     public String saveTask(@RequestBody Task task){
-        tasksService.saveTask(task);
+        tasksservice.saveTask(task);
         return task.getTaskId();
     }
 
     @PutMapping("/changeStatus")
     public Task updateTaskStatus(@RequestBody Task task){
-        tasksService.updateTaskStatus(task);
+        tasksservice.updateTaskStatus(task);
         return task;
     }
 }
