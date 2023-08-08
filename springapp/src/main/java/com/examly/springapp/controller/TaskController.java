@@ -24,7 +24,7 @@ public class TaskController {
 
     @GetMapping("/getTask/{taskId}")
     public Task getTask(@PathVariable("taskId") String taskId){
-        return tasksService.getTaskbyId(taskId);
+        return tasksService.getTaskId(taskId);
     }
 
     @DeleteMapping("/deleteTask/{taskId}")
