@@ -23,12 +23,12 @@ public class TaskController {
     }
 
     @GetMapping("/getTask/{taskId}")
-    public Task getTask(@pathVariable("taskId") String taskId){
+    public Task getTask(@PathVariable("taskId") String taskId){
         return tasksService.getTaskbyId(taskId);
     }
 
     @DeleteMapping("/deleteTask/{taskId}")
-    public void deleteTask(@pathVariable("taskId")String taskId){
+    public void deleteTask(@PathVariable("taskId")String taskId){
         tasksService.delete(taskId);
     }
 
