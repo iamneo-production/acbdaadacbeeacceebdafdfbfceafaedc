@@ -9,7 +9,7 @@ import com.examly.springapp.model.Task;
 import com.examly.springapp.repository.TaskRepository;
 
 @Service
-public class TaskService{
+public class TasksService{
     @Autowired
     TaskRepository tasksRepository;
 
@@ -29,7 +29,6 @@ public class TaskService{
     public void delete(String taskId){
         tasksRepository.deleteById(taskId);
     }
-    
     public void updateTaskStatus(Task task){
         tasksRepository.save(task);
     }
