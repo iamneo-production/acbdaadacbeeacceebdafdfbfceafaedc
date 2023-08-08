@@ -15,7 +15,7 @@ import com.examly.springapp.service.TaskService;
 public class TaskController {
 
     @Autowired
-    TasksService taskService;
+    TasksService tasksService;
 
     @GetMapping("/altasks")
     public List<Task> getAllTasks(){
