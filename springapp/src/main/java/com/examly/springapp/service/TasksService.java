@@ -6,12 +6,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.examly.springapp.model.Task;
-import com.examly.springapp.repository.*;
+import com.examly.springapp.repository.TasksRepository;
 
 @Service
 public class TasksService{
     @Autowired
-    TaskRepository tasksRepository;
+    TasksRepository tasksRepository;
 
     public List<Task> getAllTasks(){
         return(List<Task>) tasksRepository.findAll();
