@@ -40,7 +40,7 @@ public class TaskController {
 
     @PutMapping("/changeStatus")
     public Task updateTaskStatus(@RequestBody Task task){
-        tasksService.updateTaskStatus();
+        tasksService.updateTaskStatus(task);
         return task;
     }
 }
